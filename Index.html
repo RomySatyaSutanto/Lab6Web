@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum DOM dan Event</title>
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Menghubungkan file JS dengan atribut defer agar HTML diparsing dulu -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id="judul">Latihan DOM</h1>
+    <p id="pesan">Belum ada tindakan.</p>
+    <button id="tombolAksi" type="button">Klik Saya</button>
+</body>
+</html>
+    <!-- Tambahan untuk Latihan 3 -->
+    <p id="teksGaya">Teks ini akan berubah gayanya.</p>
+    <button id="tombolGaya" type="button">Ubah Gaya Teks</button>
+    <!-- Tambahan untuk Latihan 4 -->
+    <hr>
+    <div style="margin-top: 20px;">
+        <label for="namaInput">Nama:</label>
+        <input type="text" id="namaInput" maxlength="40">
+        <p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
+    </div>
+    <!-- Tambahan untuk Latihan 5 -->
+    <hr>
+    <div style="margin-top: 20px;">
+        <h3>Form Pendaftaran</h3>
+        <form id="formPendaftaran" novalidate>
+            <p>
+                <label for="nama">Nama lengkap:</label><br>
+                <input id="nama" name="nama" type="text">
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input id="email" name="email" type="email">
+            </p>
+            <p>
+                <label for="usia">Usia:</label><br>
+                <input id="usia" name="usia" type="number" min="17" max="100">
+            </p>
+            <button type="submit">Daftar</button>
+        </form>
+        <p id="pesanForm" style="font-weight: bold; color: red;"></p>
+    </div>
+    <!-- Tambahan untuk Latihan 6 -->
+    <hr>
+    <section style="margin-top: 20px;">
+        <h2>Daftar Tugas</h2>
+        <label for="inputTugas">Tugas baru:</label>
+        <input id="inputTugas" type="text">
+        <button id="tambahTugas" type="button">Tambah</button>
+        <p id="pesanTugas" style="font-style: italic; color: gray;"></p>
+        <ul id="daftarTugas"></ul>
+    </section>
+    <!-- Tambahan untuk Bagian F: Mini Project -->
+    <hr>
+    <div style="margin-top: 20px; padding-bottom: 50px;">
+        <h2>Mini Project: Form Pendaftaran Workshop</h2>
+        <form id="formWorkshop" novalidate>
+            <p>
+                <label for="namaWorkshop">Nama Lengkap:</label><br>
+                <input id="namaWorkshop" type="text" placeholder="Minimal 3 karakter">
+                <br><small>Jumlah karakter input: <span id="charCountWorkshop">0</span>/40</small>
+            </p>
+            <p>
+                <label for="emailWorkshop">Email Aktif:</label><br>
+                <input id="emailWorkshop" type="email" placeholder="contoh@email.com">
+            </p>
+            <p>
+                <label for="sesiWorkshop">Pilih Sesi Workshop:</label><br>
+                <select id="sesiWorkshop">
+                    <option value="">-- Pilih Sesi --</option>
+                    <option value="Web Development Dasar">Web Development Dasar (Pagi)</option>
+                    <option value="JavaScript Modern & DOM">JavaScript Modern & DOM (Siang)</option>
+                    <option value="UI/UX Aplikasi Mobile">UI/UX Aplikasi Mobile (Sore)</option>
+                </select>
+                <br><small id="infoSesi" style="color: blue; font-style: italic;"></small>
+            </p>
+            <button type="submit">Daftar Workshop</button>
+            <button type="button" id="btnResetWorkshop">Reset Form</button>
+        </form>
+        <p id="pesanWorkshop" style="font-weight: bold; margin-top: 10px;"></p>
+    </div>
+    <!-- Tambahan untuk Eksperimen Mandiri 4 -->
+    <hr>
+    <div style="margin-top: 20px; padding-bottom: 50px;">
+        <h2>Eksperimen: Sembunyikan & Tampilkan Teks</h2>
+        <p id="teksSembunyi">Paragraf ini bisa hilang dan muncul kembali menggunakan class CSS!</p>
+        <button id="tombolTogelTeks" type="button">Sembunyikan Teks</button>
+    </div>
